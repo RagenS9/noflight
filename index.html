@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Noflight</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div id="items"></div>
+    </div>
+
+    <div id="modal" class="overlay-background hidden">
+        <div class="overlay">
+            <h1>Congratulations! You're Going on an Adventure!</h1>
+            <p>Good for you! You are taking a trip to some place wonderful. I don't know why the pictures show shirts, when all of the images have been replaced by ones with planes. I even deleted the original image files! But that didn't stop them. They are <strong>very</strong> persistent shirts. All of the product titles were changed as well. But those refuse to change, too.</p>
+            
+            <button id="closeButton" type="button" class="btn btn-default">Close</button>
+        </div>
+    </div>
+
+<!--Get the jquery script from https://code.jquery.com/ 3.2.1 minified.-->
+<!--3.2.1 is the semver semantic version number. third major version. second minor version. one bug release.-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/moment@2.18.0"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

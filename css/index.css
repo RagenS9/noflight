@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+.overlay-background {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    /*overflow hidden hides anything that flows right out of the box*/
+    /*if you put overflow-y on the container, the whole page scrolls. if you put it on the overlay box itself, it will scroll within the overlay. */
+}
+
+.overlay-background.hidden {
+    opacity: 0;
+}
+
+.overlay {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    background-color: white;
+    width: 50vw;
+    min-width: 300px; 
+    /*height: 50vh;*/
+    margin: 0 auto;
+    margin-top: 5vh; 
+    margin-bottom: 5vh; 
+    border-radius: 5px; 
+    padding: 20px 30px;
+    /*overflow-y: auto;*/
+    /*in modal, have to define height, even though he doesn't usually like setting height.*/
+    /*overflow will allow scrolling within the modal*/
+}
